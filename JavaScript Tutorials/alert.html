@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alert Window</title>
+</head>
+<body>
+    <input id='inpt' type='text'><button id='btn'>Enter</button>
+</body>
+<script>
+    let inpt = document.getElementById('inpt');
+    let btn = document.getElementById('btn')
+    btn.onclick = function() {
+        let val = inpt.value
+        window.alert(val)
+    }
+</script>
+</html>
