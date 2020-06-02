@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alert Window</title>
+</head>
+<body>
+    <input id='inpt' type='text'><button id='btn'>Enter</button>
+
+    <ul id="lst">
+        <li>Hi</li>
+    </ul>
+</body>
+<script>
+    let inpt = document.getElementById('inpt');
+    let btn = document.getElementById('btn')
+    let lst = document.getElementById('lst')
+    btn.onclick = function() {
+        val = inpt.value
+        let newItem = document.createElement("li")
+        newItem.innerText = val
+        lst.appendChild(newItem)
+    }
+</script>
+</html>
