@@ -1,9 +1,14 @@
-var name = "Sahil Mishra"
+var name = "Sahil"
+var intro = `This is ${name} Mishra`
 
-console.log(name.substr(2,7)) // Start to Length
-console.log(name.substring(2,7)) // Start Index to End Index
-console.log(name.slice(2,7)) // Start Index to End Index
+console.log(intro)
+console.log(intro.length)
 
-console.log(name.substr(-5,3)) // Start to Length
-console.log(name.substring(-5,-3)) // Start Index to End Index
-console.log(name.slice(-5,-3)) // Start Index to End Index
+let s =" My name is Sahil Mishra"
+
+console.log(s.indexOf("Sahil"))
+console.log(s.indexOf("Saksham"))
+
+s = "This person\'s name is Sahil Mishra"
+console.log(s.indexOf("is"))
+console.log(s.indexOf("is",3))
